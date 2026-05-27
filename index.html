@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Quimica</title>
+</head>
+<body>
+    <header>
+        <div class="logo-area">
+            <img src="img/pocaozinhasemfundo.png" alt="Pocao de quimica">
+            <h1>Quimica</h1>
+        </div>
+
+        <nav class="nav-area">
+            <button type="button">Participantes</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="auth-card" aria-label="Acesso ao app de quimica">
+            <div class="brand-block">
+                <h2>QUIMICA</h2>
+                <p>Aprenda Quimica de Forma Simples</p>
+            </div>
+
+            <div class="tab-list" role="tablist" aria-label="Opcoes de acesso">
+                <button
+                    class="tab-button active"
+                    type="button"
+                    data-tab-target="login"
+                    role="tab"
+                    aria-selected="true"
+                >
+                    Entrar
+                </button>
+
+                <button
+                    class="tab-button"
+                    type="button"
+                    data-tab-target="cadastro"
+                    role="tab"
+                    aria-selected="false"
+                >
+                    Cadastro
+                </button>
+
+                <button
+                    class="tab-button"
+                    type="button"
+                    data-tab-target="restaurar"
+                    role="tab"
+                    aria-selected="false"
+                >
+                    Restaurar
+                </button>
+            </div>
+
+            <!-- Login -->
+            <form class="tab-panel active" id="login" data-tab-panel>
+                <div class="input-area">
+                    <label for="login-email">E-mail ou usuario</label>
+                    <input
+                        id="login-email"
+                        name="login-email"
+                        type="email"
+                        placeholder="seu@email.com"
+                        autocomplete="username"
+                        required
+                    >
+
+                    <label for="login-password">Senha</label>
+                    <input
+                        id="login-password"
+                        name="login-password"
+                        type="password"
+                        placeholder="Digite sua senha"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+
+                <label class="check-row">
+                    <input type="checkbox" name="remember">
+                    <span>Lembrar-me</span>
+                </label>
+
+                <button class="primary-button" type="submit">ENTRAR</button>
+
+                <button class="link-button" type="button" data-tab-target="restaurar">
+                    Esqueceu sua senha?
+                </button>
+
+                <div class="divider">
+                    <span>OU</span>
+                </div>
+
+                <button class="secondary-button" type="button" data-tab-target="cadastro">
+                    CRIAR CONTA
+                </button>
+            </form>
+
+            <!-- Cadastro -->
+            <form class="tab-panel" id="cadastro" data-tab-panel>
+                <div class="step-indicator" aria-label="Etapas do cadastro">
+                    <span class="step-dot active" data-step-dot="1"></span>
+                    <span class="step-dot" data-step-dot="2"></span>
+                </div>
+
+                <div class="signup-step active" data-signup-step="1">
+                    <div class="input-area">
+                        <label for="signup-email">E-mail</label>
+                        <input
+                            id="signup-email"
+                            name="signup-email"
+                            type="email"
+                            placeholder="seu@email.com"
+                            autocomplete="email"
+                            required
+                        >
+
+                        <label for="signup-user">Usuario</label>
+                        <input
+                            id="signup-user"
+                            name="signup-user"
+                            type="text"
+                            placeholder="Nome de usuario"
+                            autocomplete="username"
+                            required
+                        >
+
+                        <label for="signup-password">Senha</label>
+                        <input
+                            id="signup-password"
+                            name="signup-password"
+                            type="password"
+                            placeholder="Crie uma senha"
+                            autocomplete="new-password"
+                            required
+                        >
+                    </div>
+
+                    <button class="primary-button" type="button" data-next-step="2">
+                        CONTINUAR
+                    </button>
+                </div>
+
+                <div class="signup-step" data-signup-step="2">
+                    <fieldset class="avatar-group">
+                        <legend>Escolha seu avatar</legend>
+
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="neon" checked>
+                            <span class="avatar-swatch avatar-neon">Q</span>
+                        </label>
+
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="lima">
+                            <span class="avatar-swatch avatar-lima">H</span>
+                        </label>
+
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="laser">
+                            <span class="avatar-swatch avatar-laser">O</span>
+                        </label>
+
+                        <label class="avatar-option">
+                            <input type="radio" name="avatar" value="plasma">
+                            <span class="avatar-swatch avatar-plasma">N</span>
+                        </label>
+                    </fieldset>
+
+                    <div class="input-grid">
+                        <div class="field">
+                            <label for="full-name">Nome completo</label>
+                            <input
+                                id="full-name"
+                                name="full-name"
+                                type="text"
+                                placeholder="Seu nome"
+                                autocomplete="name"
+                                required
+                            >
+                        </div>
+
+                        <div class="field">
+                            <label for="birth-date">Nascimento</label>
+                            <input id="birth-date" name="birth-date" type="date" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="cpf">CPF</label>
+                            <input
+                                id="cpf"
+                                name="cpf"
+                                type="text"
+                                inputmode="numeric"
+                                maxlength="14"
+                                placeholder="000.000.000-00"
+                                required
+                            >
+                        </div>
+
+                        <div class="field">
+                            <label for="enrollment-type">Tipo de matricula</label>
+                            <select id="enrollment-type" name="enrollment-type" required>
+                                <option value="">Selecione</option>
+                                <option value="aluno">Aluno</option>
+                                <option value="professor">Professor</option>
+                                <option value="monitor">Monitor</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="button-row">
+                        <button class="secondary-button compact" type="button" data-prev-step="1">
+                            VOLTAR
+                        </button>
+
+                        <button class="primary-button compact" type="submit">
+                            FINALIZAR
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Restaurar senha -->
+            <form class="tab-panel" id="restaurar" data-tab-panel>
+                <div class="input-area">
+                    <label for="recover-email">E-mail cadastrado</label>
+                    <input
+                        id="recover-email"
+                        name="recover-email"
+                        type="email"
+                        placeholder="seu@email.com"
+                        autocomplete="email"
+                        required
+                    >
+                </div>
+
+                <button class="primary-button" type="submit">
+                    RESTAURAR SENHA
+                </button>
+
+                <button class="secondary-button" type="button" data-tab-target="login">
+                    VOLTAR AO LOGIN
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
