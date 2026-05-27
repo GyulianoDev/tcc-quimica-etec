@@ -30,16 +30,7 @@ Cuida do visual: cores, fontes, responsividade, botoes, inputs e efeito neon.
 `script.js`  
 Faz as abas funcionarem, troca as etapas do cadastro e formata o CPF enquanto digita.
 
-## Visual
-
-O estilo segue uma pegada de laboratorio/quimica misturada com pixel art:
-
-- verde neon nos destaques;
-- roxo nos contornos e brilhos;
-- fundo escuro;
-- fonte com cara retro.
-
-## Observacao
+## Obs
 
 Ainda e uma tela front-end, entao os formularios nao salvam dados de verdade.
 Eles estao prontos visualmente para depois conectar com um sistema de login ou banco de dados.
