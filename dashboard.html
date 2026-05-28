@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Quimica - Inicio</title>
+    </head>
+    <body class="dashboard-body">
+        <header>
+            <a class="logo-area logo-link" href="dashboard.html" aria-label="Inicio da plataforma Quimica">
+                <img src="img/pocaozinhasemfundo.png" alt="Pocao de quimica" />
+                <h1>Quimica</h1>
+            </a>
+            <nav class="nav-area dashboard-nav" aria-label="Navegacao principal">
+                <a href="#hoje">Hoje</a>
+                <a href="#continuar">Aula</a>
+                <a href="#trilhas">Trilhas</a>
+                <a href="index.html">Sair</a>
+            </nav>
+        </header>
+        <main class="dashboard-main">
+            <div class="dashboard-shell">
+                <section class="command-center" id="hoje" aria-labelledby="dashboard-title">
+                    <div class="student-hero">
+                        <span class="eyebrow">Plano de hoje</span>
+                        <h2 id="dashboard-title">Ola, Camila!</h2>
+                        <p>Seu laboratorio esta pronto: continue a aula, responda o desafio e feche com flashcards.</p>
+                        <div class="hero-actions">
+                            <a class="primary-button action-link" href="#continuar">CONTINUAR AULA</a>
+                            <a class="secondary-button action-link" href="#revisao">REVISAO RAPIDA</a>
+                        </div>
+                    </div>
+                    <aside class="mentor-card" aria-label="Mentora de estudos">
+                        <div class="mentor-scene">
+                            <div class="pixel-mentor" aria-hidden="true">
+                                <span class="mentor-face"></span>
+                                <span class="mentor-goggles"></span>
+                                <span class="mentor-coat"></span>
+                                <span class="mentor-beaker"></span>
+                            </div>
+                            <div class="mentor-message">
+                                <strong>Prof. Lia</strong>
+                                <p>Comece por ligacoes quimicas. Depois faca 5 questoes para fixar.</p>
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+                <section class="progress-strip" aria-label="Resumo do progresso">
+                    <article class="progress-tile accent-green">
+                        <span class="tile-icon">%</span>
+                        <div>
+                            <strong>68%</strong>
+                            <span>curso concluido</span>
+                        </div>
+                    </article>
+                    <article class="progress-tile accent-purple">
+                        <span class="tile-icon">A</span>
+                        <div>
+                            <strong>18</strong>
+                            <span>aulas finalizadas</span>
+                        </div>
+                    </article>
+                    <article class="progress-tile accent-cyan">
+                        <span class="tile-icon">7</span>
+                        <div>
+                            <strong>7 dias</strong>
+                            <span>sequencia ativa</span>
+                        </div>
+                    </article>
+                    <article class="progress-tile accent-amber">
+                        <span class="tile-icon">T</span>
+                        <div>
+                            <strong>2h 35</strong>
+                            <span>estudo semanal</span>
+                        </div>
+                    </article>
+                </section>
+                <section class="study-layout">
+                    <article class="study-card lesson-focus" id="continuar">
+                        <div class="section-heading">
+                            <div>
+                                <span class="section-kicker">Agora</span>
+                                <h3>Ligacoes quimicas</h3>
+                            </div>
+                            <span class="lesson-badge">Aula 04</span>
+                        </div>
+                        <p class="lesson-description">
+                            Entenda ligacao ionica, covalente e metalica com exemplos visuais e exercicios curtos.
+                        </p>
+                        <div class="lesson-steps" aria-label="Roteiro da aula">
+                            <div class="lesson-step done">
+                                <span>1</span>
+                                <div>
+                                    <strong>Rever conceitos</strong>
+                                    <small>5 min</small>
+                                </div>
+                            </div>
+                            <div class="lesson-step active">
+                                <span>2</span>
+                                <div>
+                                    <strong>Assistir aula</strong>
+                                    <small>25 min</small>
+                                </div>
+                            </div>
+                            <div class="lesson-step">
+                                <span>3</span>
+                                <div>
+                                    <strong>Praticar</strong>
+                                    <small>8 questoes</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="focus-footer">
+                            <div class="focus-progress">
+                                <span>42% desta aula</span>
+                                <div class="progress-line" aria-label="Progresso da aula">
+                                    <span style="width: 42%"></span>
+                                </div>
+                            </div>
+                            <a class="primary-button action-link wide-action" href="#trilhas">CONTINUAR</a>
+                        </div>
+                    </article>
+                    <aside class="assistant-column" aria-label="Atividades rapidas">
+                        <section class="study-card atom-card">
+                            <div class="atom-buddy" aria-hidden="true">
+                                <span></span>
+                            </div>
+                            <div>
+                                <span class="section-kicker">Guia rapido</span>
+                                <p>Prioridade de hoje: terminar a aula 04 e revisar simbolos quimicos.</p>
+                            </div>
+                        </section>
+                        <section class="study-card challenge-card" aria-labelledby="desafio-title">
+                            <div class="section-heading compact-heading">
+                                <div>
+                                    <span class="section-kicker">Desafio do dia</span>
+                                    <h3 id="desafio-title">Questao rapida</h3>
+                                </div>
+                            </div>
+                            <p class="challenge-question">
+                                Qual elemento quimico possui o simbolo <strong>Na</strong>?
+                            </p>
+                            <div class="answer-list" aria-label="Alternativas do desafio">
+                                <button class="answer-button" type="button" data-answer="wrong">Nitrogenio</button>
+                                <button class="answer-button" type="button" data-answer="correct">Sodio</button>
+                                <button class="answer-button" type="button" data-answer="wrong">Neon</button>
+                            </div>
+                            <p class="challenge-result" data-challenge-result aria-live="polite"></p>
+                        </section>
+                        <section class="study-card" id="revisao">
+                            <div class="section-heading compact-heading">
+                                <div>
+                                    <span class="section-kicker">Revisao rapida</span>
+                                    <h3>Flashcards</h3>
+                                </div>
+                            </div>
+                            <div class="review-list">
+                                <button class="review-row" type="button">
+                                    <span>Na</span>
+                                    <strong>Sodio</strong>
+                                </button>
+                                <button class="review-row" type="button">
+                                    <span>pH</span>
+                                    <strong>Acidez</strong>
+                                </button>
+                                <button class="review-row" type="button">
+                                    <span>Mol</span>
+                                    <strong>Quantidade</strong>
+                                </button>
+                            </div>
+                        </section>
+                    </aside>
+                </section>
+                <section class="path-board study-card" id="trilhas" aria-labelledby="trilhas-title">
+                    <div class="section-heading">
+                        <div>
+                            <span class="section-kicker">Mapa de trilhas</span>
+                            <h3 id="trilhas-title">Seu caminho na quimica</h3>
+                        </div>
+                    </div>
+                    <div class="path-grid">
+                        <button class="path-node done" type="button" data-path-node>
+                            <span class="node-mascot">QG</span>
+                            <strong>Quimica Geral</strong>
+                            <small>82% concluido</small>
+                            <span class="node-status">Revisar</span>
+                        </button>
+                        <button class="path-node done" type="button" data-path-node>
+                            <span class="node-mascot purple-node">TP</span>
+                            <strong>Tabela Periodica</strong>
+                            <small>58% concluido</small>
+                            <span class="node-status">Continuar</span>
+                        </button>
+                        <button class="path-node active" type="button" data-path-node>
+                            <span class="node-mascot cyan-node">Li</span>
+                            <strong>Ligacoes Quimicas</strong>
+                            <small>Aula atual</small>
+                            <span class="node-status">Agora</span>
+                        </button>
+                        <button class="path-node" type="button" data-path-node>
+                            <span class="node-mascot amber-node">St</span>
+                            <strong>Estequiometria</strong>
+                            <small>Proximo modulo</small>
+                            <span class="node-status">Depois</span>
+                        </button>
+                        <button class="path-node" type="button" data-path-node>
+                            <span class="node-mascot pink-node">Or</span>
+                            <strong>Organica</strong>
+                            <small>Bloqueado</small>
+                            <span class="node-status">Em breve</span>
+                        </button>
+                        <button class="path-node" type="button" data-path-node>
+                            <span class="node-mascot">Ex</span>
+                            <strong>Exercicios</strong>
+                            <small>64% de acertos</small>
+                            <span class="node-status">Praticar</span>
+                        </button>
+                    </div>
+                </section>
+                <section class="performance-board" id="desempenho" aria-labelledby="desempenho-title">
+                    <article class="study-card performance-wide">
+                        <div class="section-heading">
+                            <div>
+                                <span class="section-kicker">Resumo</span>
+                                <h3 id="desempenho-title">Desempenho</h3>
+                            </div>
+                        </div>
+                        <div class="performance-grid">
+                            <div>
+                                <span>Acertos</span>
+                                <strong>84%</strong>
+                            </div>
+                            <div>
+                                <span>Erros</span>
+                                <strong>16%</strong>
+                            </div>
+                            <div>
+                                <span>Tempo estudado</span>
+                                <strong>2h 35</strong>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="study-card topic-help">
+                        <span class="section-kicker">Precisa revisar</span>
+                        <h3>Balanceamento</h3>
+                        <p>
+                            Esse topico aparece nos seus erros. Reserve 10 minutos para revisar antes da proxima aula.
+                        </p>
+                        <div class="mini-progress danger"><span style="width: 72%"></span></div>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
