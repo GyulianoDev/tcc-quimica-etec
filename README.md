@@ -15,23 +15,6 @@ Por enquanto, a pagina tem:
 - campos de nome completo, nascimento, CPF e tipo de matricula;
 - layout responsivo para celular e computador.
 
-## Como abrir
-
-Nao precisa instalar nada.
-
-E so abrir o arquivo `index.html` no navegador.
-
-## Arquivos principais
-
-`index.html`  
-Fica a estrutura da pagina: header, card principal, abas, formularios e campos.
-
-`style.css`  
-Cuida do visual: cores, fontes, responsividade, botoes, inputs e efeito neon.
-
-`script.js`  
-Faz as abas funcionarem, troca as etapas do cadastro e formata o CPF enquanto digita.
-
 ## Obs
 
 Ainda e uma tela front-end, entao os formularios nao salvam dados de verdade.
